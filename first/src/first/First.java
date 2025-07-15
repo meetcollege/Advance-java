@@ -20,9 +20,15 @@ public class First {
         // TODO code application logic here
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
+            
+            // connact to databse
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3309/firstp","root","");
             System.out.println(con);
+            
+            // create statement object            
             Statement st = con.createStatement();
+            
+            // execute query
             ResultSet rs = st.executeQuery("select * from emp");
             while(rs.next()){
                 System.out.println("Id = "+rs.getInt("id")+", Name = "+rs.getString("name")+", Dept = "+rs.getString("dept"));
