@@ -23,10 +23,10 @@ public class Insert {
         
         System.out.print("Enter emp id : ");
         int id = sc.nextInt();
-        System.out.print("Enter emp name : ");
-        String name = sc.next();
-        System.out.print("ENter emp department : ");
-        String department = sc.next();
+//        System.out.print("Enter emp name : ");
+//        String name = sc.next();
+//        System.out.print("ENter emp department : ");
+//        String department = sc.next();
         
         // database details
         String url = "jdbc:mysql://localhost:3309/firstp";
@@ -49,12 +49,12 @@ public class Insert {
 //            String department = "Marketing";
             
             // sql insertion query using static data
-            String query = "UPDATE emp SET `id`="+id+",`name`='"+name+"',`dept`='"+department+"' WHERE `id`='"+id+"'";
+            String query = "delete from emp where id="+id+"";
             
             //execute the insert
             int rowsInserted = st.executeUpdate(query);
             if(rowsInserted>0){
-                System.out.println("Employee updated successfully");
+                System.out.println("Employee deleted successfully");
             }
         }
         catch(Exception e){
