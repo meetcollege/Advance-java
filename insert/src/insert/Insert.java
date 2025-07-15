@@ -49,12 +49,12 @@ public class Insert {
 //            String department = "Marketing";
             
             // sql insertion query using static data
-            String query = "INSERT INTO emp(id,name,dept) VALUES ("+id+",'"+name+"','"+department+"')";
+            String query = "UPDATE emp SET `id`="+id+",`name`='"+name+"',`dept`='"+department+"' WHERE `id`='"+id+"'";
             
             //execute the insert
             int rowsInserted = st.executeUpdate(query);
             if(rowsInserted>0){
-                System.out.println("Employee inserted successfully");
+                System.out.println("Employee updated successfully");
             }
         }
         catch(Exception e){
