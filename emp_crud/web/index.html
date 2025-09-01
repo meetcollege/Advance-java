@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>  <!-- table name emp =  id is auto_increment- ai -select ,name,password,email,country -->
+        <h1>employee data</h1>
+        <form action="SaveServlet" method="POST">
+            <table> 
+                <tr>
+                    <td>name</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                   <tr>
+                    <td>password</td>
+                    <td><input type="password" name="password" ></td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td><input type="email" name="email" ></td>
+                </tr>
+                <tr>
+                    <td>country</td>
+                    <td>
+                    <select name="country" style="width:150px" >
+                    <option>India </option>
+                     <option>u.s.a</option>
+                      <option>u.k </option>
+                    </select>
+                    </td>
+                </tr>
+                <tr><td colspan="2" > <input type="submit" value="save employee"></td> </tr>
+            </table> </form>
+        
+        <a href="ViewServlet">view employee</a>
+    </body>
+</html>
+
+<!-- step 1-> sourse packge- new- java packeage- employee name -> step2  under-> sourse packege->
+  entity class - employee- data connection -create -mysql,port no write -finish
+
+-->

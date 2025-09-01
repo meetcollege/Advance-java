@@ -1,29 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package employee;
+package emp;
 
 import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
-/**
- *
- * @author ex604_8
- */
-@Entity
 public class employee implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    
-    int id;
-    String name,password,email,country;
+
+    private int id;
+    private String name;
+    private String password;
+    private String email;
+    private String country;
 
     public int getId() {
         return id;
@@ -64,10 +51,9 @@ public class employee implements Serializable {
     public void setCountry(String country) {
         this.country = country;
     }
-    
+
     @Override
     public String toString() {
         return "employee.employee[ id=" + id + " ]";
     }
-    
 }

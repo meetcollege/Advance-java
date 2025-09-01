@@ -3,10 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package employee;
+package emp;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -32,25 +33,16 @@ public class SaveServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();
-        
-        String name = request.getParameter("name");
-        String password = request.getParameter("password");
-        String email = request.getParameter("email");
-        String country = request.getParameter("country");
-        
-        employee e = new employee();
-        e.setName(name);
-        e.setPassword(password);
-        e.setEmail(email);
-        e.setCountry(country);
-        
-        int a = employeeDao.save(e);
-        
-        if(a>0){
-            out.print("Data inserted");
-        } else{
-            out.print("Data not inserted");
+        try(PrintWriter out = response.getWriter()){
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet SaveServlet</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet SaveServlet at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
         }
         
     }
@@ -81,7 +73,47 @@ public class SaveServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        // processRequest(request, response);
+        
+        response.setContentType("text/html;charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        List<employee> list=employeeDao.getAllEmployees;
+        
+        out.print("<table border='1' width='100% '>");
+        out.print("<tr><td>id</td><td>Name</td><td>password</td><td>email</td><td>EDIT</td><td>DELETE</td></tr>");
+
+         for(employee e:list)
+         {
+             out.print("<tr><td>");
+             out.print(e.getId()+"</td><td>");
+             out.print(e.getName()+"</td><td>");
+             out.print(e.getPassword()+"</td><td>");
+             out.print(e.getEmail()+"</td><td></tr>");
+             
+         }
+
+//        String name = request.getParameter("name");
+//        String password = request.getParameter("password");
+//        String email = request.getParameter("email");
+//        String country = request.getParameter("country");
+//        
+//        employee e = new employee();
+//        
+//        e.setName(name);
+//        e.setPassword(password);
+//        e.setEmail(email);
+//        e.setCountry(country);
+//        
+//        int a = employeeDao.save(e);
+//        
+//        if(a>0){
+//            out.print("Data inserted");
+//        } else{
+//            out.print("Data not inserted");
+//        }
+//        
+        
+        
     }
 
     /**

@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\m\\AJ\\salary\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCDC87-2FFA-4632-A78B-48142DBF8239}|salary\\salary.csproj|d:\\m\\aj\\salary\\salary\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCDC87-2FFA-4632-A78B-48142DBF8239}|salary\\salary.csproj|solutionrelative:salary\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCDC87-2FFA-4632-A78B-48142DBF8239}|salary\\salary.csproj|D:\\m\\AJ\\salary\\salary\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{15FCDC87-2FFA-4632-A78B-48142DBF8239}|salary\\salary.csproj|solutionrelative:salary\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 140,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WebForm1.aspx.cs",
+              "DocumentMoniker": "D:\\m\\AJ\\salary\\salary\\WebForm1.aspx.cs",
+              "RelativeDocumentMoniker": "salary\\WebForm1.aspx.cs",
+              "ToolTip": "D:\\m\\AJ\\salary\\salary\\WebForm1.aspx.cs",
+              "RelativeToolTip": "salary\\WebForm1.aspx.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAiwHEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T08:05:04.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WebForm1.aspx",
+              "DocumentMoniker": "D:\\m\\AJ\\salary\\salary\\WebForm1.aspx",
+              "RelativeDocumentMoniker": "salary\\WebForm1.aspx",
+              "ToolTip": "D:\\m\\AJ\\salary\\salary\\WebForm1.aspx",
+              "RelativeToolTip": "salary\\WebForm1.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-08-22T08:04:59.702Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
